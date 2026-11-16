@@ -1,0 +1,46 @@
+:root {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --border: #334155;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", sans-serif;
+  line-height: 1.7;
+  padding: 0 1.5rem;
+}
+header, main, footer { max-width: 800px; margin: 0 auto; }
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 2rem 0; border-bottom: 1px solid var(--border);
+}
+header a { color: var(--text-main); text-decoration: none; font-weight: 700; font-size: 1.25rem; }
+nav a { color: var(--accent); font-size: 0.95rem; }
+main { padding: 2.5rem 0; }
+.badge {
+  display: inline-block; background: rgba(56, 189, 248, 0.15);
+  color: var(--accent); padding: 0.2rem 0.6rem; border-radius: 4px;
+  font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem;
+}
+h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+h2 { font-size: 1.35rem; margin: 2rem 0 0.75rem; color: var(--accent); }
+time { color: var(--text-muted); font-size: 0.9rem; display: block; margin-bottom: 1.5rem; }
+.summary-box, .note-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;
+}
+.note-card { display: block; text-decoration: none; color: inherit; }
+.note-card:hover { border-color: var(--accent); }
+.note-card h3 { color: var(--text-main); margin: 0.25rem 0; }
+.note-card p { color: var(--text-muted); font-size: 0.95rem; }
+ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+li { margin-bottom: 0.4rem; }
+footer {
+  text-align: center; padding: 2rem 0; border-top: 1px solid var(--border);
+  color: var(--text-muted); font-size: 0.85rem;
+}
